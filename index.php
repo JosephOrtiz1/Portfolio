@@ -1,3 +1,13 @@
+<!-- Conexion con la base de datos -->
+ 
+<?php
+$conexion = new mysqli("localhost", "Admin", "JqZl@.8092hjkl", "yellowmenstorephp");
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +18,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
     <div class="wrapper">
         <aside>
             <header>
